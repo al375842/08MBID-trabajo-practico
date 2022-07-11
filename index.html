@@ -5,6 +5,7 @@
 </head>
 
 <body>
+  <div id="prueba">
   <h1>08MBID Trabajo Práctico - Análisis de la bolsa de valores</h1>
 
   <b>Nombre:</b> Lucas Niño Ruiz <br /><br />
@@ -62,37 +63,89 @@
     src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTfo9VjkVoWb_8FaVhhBBk-5AmlMsrek8LdpSbAlfjt4BPleZCtfXd9VOj3rkImYwPCiiflHqOF5JN8/pubchart?oid=641547321&amp;format=interactive"
   ></iframe>
 
+  <br />
+  <br />
+
   En este gráfico podemos ver que la mayor parte de las empresas importantes del
   mundo provienen de Estados Unidos y de China, pero también sorprende la
   cantidad de Japón. Esta representación presenta varios problemas: aparecen
   demasiados países y están desordenados. Yo ordenaría descendentemente por
   número de empresa por país, y eliminaría del gráfico los países con sólo una o
-  dos empresas. Esta funcionalidad no está disponible en Spreadsheet trabajando
-  directamente con el gráfico, sino que tendría que modificar las tablas, lo
-  cual supone un tedioso preprocesamiento debido al formato de las mismas, por
-  lo que a partir de ahora trabajaré con Power BI, que es mucho más versátil.
+  dos empresas. Esta funcionalidad no está disponible en Google Sheets
+  trabajando directamente con el gráfico, sino que tendría que modificar las
+  tablas, lo cual supone un tedioso preprocesamiento debido al formato de las
+  mismas, por lo que a partir de ahora trabajaré con Power BI, que es mucho más
+  versátil.
+
+  <br />
+  <br />
+
+  <iframe
+    title="practica"
+    width="1710"
+    height="812"
+    src="https://app.powerbi.com/reportEmbed?reportId=64a3acec-d09a-45ae-9353-84ea08e06a49&autoAuth=true&ctid=02674ef9-5c2c-47d0-b2bc-595a784dda00&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXdlc3QtZXVyb3BlLWItcHJpbWFyeS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldC8ifQ%3D%3D"
+    frameborder="0"
+    allowfullscreen="true"
+  ></iframe>
+
+  <br />
+  <br />
+  En el informe superior se pueden observar tres gráficos distintos. El primero
+  es un mapa en el que se muestran los beneficios de las 500 empresas más
+  importantes del mundo por país, ya que comprobar si era posible mostrar la
+  misma información que en el gráfico de barras desarrollado en Google Sheets.
+  <br />
+  <br />
+  En el caso del segundo, es un gráfico de dispersión que muestra la cantidad de
+  movimientos realizados (tamaño) según pasa el tiempo. Las empresas mostradas
+  son algunas que me han parecido interesantes (los símbolos mostrados son los
+  utilizados en la bolsa de valores, por lo que es necesario un conocimiento
+  previo).
+  <br />
+  <br />
+  Por último, se encuentra un diagrama de velas al uso, herramienta del día a
+  día para el análisis técnico bursátil. Este tipo de gráfico refleja el precio
+  de apertura y de cierre de un valor, así como el máximo y el mínimo que ha
+  encontrado dicho valor. En este caso, he escogido la empresa Coca-Cola
+  (símbolo KO) y he decidido mostrarlo por años, aunque para realizar una
+  operación sería más conveniente una escala menor, de días o incluso horas.
+  <br />
+  <br />
+  Me gustaría resaltar que al hacer click en cualquiera de los tres gráficos
+  podemos modificar los filtros, añadiendo mucha interactividad al poder
+  centrarnos en las empresas que más nos interesen. En el caso del diagrama de
+  velas se deben seleccionar individualmente, no así en el de dispersión
+  (recomiento no cargar todas las empresas para evitar sobrecargas).
 
   <h2>Conclusión</h2>
   <b>Marco teórico:</b> Siento que a pesar de tener afianzados los conceptos
   básicos todavía me hace falta entender gráficos más complejos para poder
   desarrollarlos. Entiendo que esta habilidad se obtiene a través de la
-  experiencia y de conocer más en profundidad el campo tratado.
+  experiencia y de conocer más en profundidad el campo tratado. Personalmente,
+  no tengo más que nociones básicas del tema tratado en esta práctica, pero tras
+  jugar con los gráficos que he obtenido he podido llegar sacar algunas
+  conclusiones (por ejemplo el incremento en movimientos en bolsa en Amazon
+  durante el comienzo de la pandemia y cuarentena), po lo que puedo decir que
+  estoy satisfecho con el trabajo realizado.
   <br />
   <br />
   <b>Gráficos y herramientas utilizadas:</b> Para la mayor parte de los gráficos
   he utilizado Power BI ya que es la herramienta con la que más tiempo llevo
   trabajando. No obstante, me pareció buena idea consolidar el conocimiento de
-  Google Spreadsheets, aunque finalmente haya encontrado algunas limitaciones
-  que no me permitían solventar algunos problemas. Aún con eso, pienso que es
-  una herramienta útil para "salir del paso" si necesitas un gráfico simple y
+  Google Sheets, aunque finalmente haya encontrado algunas limitaciones que no
+  me permitían solventar algunos problemas. Aún con eso, pienso que es una
+  herramienta útil para "salir del paso" si necesitas un gráfico simple y
   rápido.
   <br />
   <br />
   <b>Posibles mejoras:</b> En primer lugar, he querido trabajar con un fichero
-  csv estático por comodidad, pero es cierto que se puede integrar con una API
-  para obtener los datos actualizados en todo momento. Con conocimiento experto
-  estos gráficos serían mucho más útiles, pero en manos inexpertas sería una
-  buena idea crear cuadros con las predicciones basadas en métodos estadísticos,
-  pero considero que es algo que escapa al alcance de la asignatura.
+  csv estático por comodidad, pero es cierto que se puede integrar con alguna
+  API para obtener los datos actualizados en todo momento. Con conocimiento
+  experto estos gráficos serían mucho más útiles, pero en manos inexpertas sería
+  una buena idea crear cuadros con las predicciones basadas en métodos
+  estadísticos, pero considero que es algo que escapa al alcance de la
+  asignatura.
   <br />
+  </div>
 </body>
